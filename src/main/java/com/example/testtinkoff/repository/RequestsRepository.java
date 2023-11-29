@@ -1,14 +1,11 @@
 package com.example.testtinkoff.repository;
 
-import com.example.testtinkoff.forms.FormResponse;
 import com.example.testtinkoff.entity.Requests;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 
 import javax.sql.DataSource;
 import java.sql.*;
 
-import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
 @org.springframework.stereotype.Repository
 public class RequestsRepository {

@@ -1,7 +1,6 @@
 package com.example.testtinkoff.repository;
 
 import com.example.testtinkoff.entity.Requests;
-import com.example.testtinkoff.forms.FormRequest;
 import com.example.testtinkoff.forms.FormResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

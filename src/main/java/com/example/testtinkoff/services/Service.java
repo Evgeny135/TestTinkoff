@@ -1,6 +1,5 @@
 package com.example.testtinkoff.services;
 
-import com.example.testtinkoff.entity.Translations;
 import com.example.testtinkoff.forms.FormRequest;
 import com.example.testtinkoff.forms.FormResponse;
 import com.example.testtinkoff.entity.Requests;
