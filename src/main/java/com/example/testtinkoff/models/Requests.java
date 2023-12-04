@@ -1,4 +1,4 @@
-package com.example.testtinkoff.entity;
+package com.example.testtinkoff.models;
 
 import java.time.LocalDateTime;
 

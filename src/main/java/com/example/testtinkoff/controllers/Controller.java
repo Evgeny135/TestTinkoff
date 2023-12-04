@@ -1,7 +1,8 @@
 package com.example.testtinkoff.controllers;
 
 import com.example.testtinkoff.forms.FormRequest;
-import com.example.testtinkoff.services.Service;
+import com.example.testtinkoff.forms.FormResponse;
+import com.example.testtinkoff.services.TranslationService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,11 +15,11 @@ import java.time.LocalDateTime;
 public class Controller {
 
     @Autowired
-    private Service service;
+    private TranslationService translationService;
 
     @PostMapping(value = "/",produces="application/json")
-    public String index(@RequestBody FormRequest formRequest, HttpServletRequest request){
+    public FormResponse index(@RequestBody FormRequest formRequest, HttpServletRequest request){
         LocalDateTime localDateTime = LocalDateTime.now();
-        return service.getResponse(formRequest,request.getRemoteAddr(), localDateTime);
+        return translationService.getResponse(formRequest,request.getRemoteAddr(), localDateTime);
     }
 }

@@ -1,6 +1,6 @@
 package com.example.testtinkoff.repository;
 
-import com.example.testtinkoff.entity.Requests;
+import com.example.testtinkoff.models.Requests;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.sql.DataSource;

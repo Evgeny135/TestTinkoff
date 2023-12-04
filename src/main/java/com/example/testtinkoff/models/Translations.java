@@ -1,4 +1,4 @@
-package com.example.testtinkoff.entity;
+package com.example.testtinkoff.models;
 
 public class Translations {
     private int id;
